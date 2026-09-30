@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8f4">
+  <meta name="description" content="Explore property opportunities in Osogbo and surrounding areas with Rehoboth Homes & Estate Management. Browse land, homes, rentals and development opportunities.">
+  <meta name="keywords" content="properties for sale in Osogbo, land for sale in Osogbo, houses for sale in Osogbo, land investment Osogbo, real estate company Osogbo, property agents in Osogbo, land for sale in Osun State">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rehoboth Homes & Estate Management | Property in Osogbo">
+  <meta property="og:description" content="Find the right property in Osogbo. Browse verified property opportunities and request an inspection.">
+  <title>Rehoboth Homes & Estate Management | Property in Osogbo</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <script src="properties.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Rehoboth Homes home">
+      <span class="brand-mark" aria-hidden="true">R<span>H</span></span>
+      <span class="brand-name">Rehoboth Homes<small>& Estate Management</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#properties">Properties</a>
+      <a href="#about">About</a>
+      <a href="#process">How it works</a>
+      <a class="nav-cta js-whatsapp" href="#contact">Chat on WhatsApp <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div id="page-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> PROPERTY IN OSOGBO & SURROUNDING AREAS</p>
+          <h1 id="hero-title">Find the right<br>property in <em>Osogbo.</em></h1>
+          <p class="hero-intro">Rehoboth Homes & Estate Management helps you discover property opportunities for purchase, investment and development, with clear information at every step.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#properties">View available properties <span aria-hidden="true">↘</span></a>
+            <a class="button button-quiet js-whatsapp" href="#contact"><span class="whatsapp-mark" aria-hidden="true">W</span> Chat on WhatsApp</a>
+          </div>
+          <div class="hero-note"><span class="note-rule"></span><span>Local property enquiries, handled directly.</span></div>
+        </div>
+        <figure class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=82" alt="Contemporary residential architecture in a landscaped setting" fetchpriority="high">
+          <figcaption><span class="image-caption-dot"></span> Representative property imagery</figcaption>
+          <div class="hero-index" aria-hidden="true"><span>RH</span><span>01 / 04</span></div>
+        </figure>
+        <div class="hero-stamp" aria-hidden="true"><span>OSOGBO</span><span class="stamp-line"></span><span>OSUN STATE</span></div>
+      </section>
+
+      <section class="catalogue section-wrap" id="properties" aria-labelledby="properties-title">
+        <div class="section-heading catalogue-heading">
+          <div><p class="eyebrow">THE PROPERTY CATALOGUE</p><h2 id="properties-title">Find a place to <em>begin.</em></h2></div>
+          <p>Browse property opportunities around Osogbo. Ask us for current details or to arrange a viewing.</p>
+        </div>
+        <div class="category-strip" aria-label="Browse property categories">
+          <button class="category-chip is-active" type="button" data-category="">All properties <span aria-hidden="true">↗</span></button>
+          <button class="category-chip" type="button" data-category="Land">Land</button>
+          <button class="category-chip" type="button" data-category="Houses">Houses</button>
+          <button class="category-chip" type="button" data-category="Commercial Property">Commercial</button>
+          <button class="category-chip" type="button" data-category="Investment Opportunities">Investment</button>
+          <button class="category-chip" type="button" data-category="Property Development">Development</button>
+          <button class="category-chip" type="button" data-category="Rentals">Rentals</button>
+        </div>
+        <form class="search-panel" id="property-search">
+          <label class="search-field search-location"><span>Location</span><input id="filter-location" type="search" placeholder="e.g. Osogbo" autocomplete="off"></label>
+          <label class="search-field"><span>Property type</span><select id="filter-type"><option value="">Any type</option><option>Land</option><option>Houses</option><option>Commercial Property</option><option>Investment Opportunities</option><option>Property Development</option><option>Rentals</option></select></label>
+          <label class="search-field"><span>Price range</span><select id="filter-price"><option value="">Any price</option><option value="0-10000000">Under ₦10m</option><option value="10000000-30000000">₦10m – ₦30m</option><option value="30000000-75000000">₦30m – ₦75m</option><option value="75000000-">Above ₦75m</option></select></label>
+          <label class="search-field"><span>Availability</span><select id="filter-status"><option value="">Sale or rent</option><option value="For Sale">For sale</option><option value="For Rent">For rent</option></select></label>
+          <button class="search-submit" type="submit" aria-label="Search properties"><span>Search</span><span aria-hidden="true">↗</span></button>
+        </form>
+        <div class="results-topline"><p id="results-count" aria-live="polite"></p><button id="clear-filters" class="text-button" type="button">Clear filters <span aria-hidden="true">×</span></button></div>
+        <div class="property-grid" id="property-grid"></div>
+        <div class="catalogue-empty" id="catalogue-empty" hidden>
+          <span class="empty-mark" aria-hidden="true">RH</span>
+          <div><p class="eyebrow">A CLEAR START</p><h3>Current listings are being updated.</h3><p>Contact Rehoboth for available properties and the latest details before making a decision.</p></div>
+          <a class="button button-dark js-whatsapp" href="#contact">Ask about availability <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="no-results" id="no-results" hidden><h3>No matching properties found.</h3><p>Try adjusting your filters or ask us about upcoming availability.</p></div>
+      </section>
+
+      <section class="about-band" id="about">
+        <div class="about-image"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=78" alt="Bright, contemporary home interior" loading="lazy"><span>PROPERTY, CONSIDERED CAREFULLY</span></div>
+        <div class="about-copy"><p class="eyebrow">ABOUT REHOBOTH</p><h2>Local insight.<br><em>Clear next steps.</em></h2><p>Rehoboth Homes & Estate Management helps buyers identify and evaluate property opportunities in Osogbo and surrounding areas. From the first question through an inspection, we make it easier to understand what is available and what to check.</p><a class="arrow-link" href="#process">Explore how it works <span aria-hidden="true">↘</span></a></div>
+      </section>
+
+      <section class="trust-section section-wrap">
+        <div class="trust-intro"><p class="eyebrow">A PRACTICAL WAY TO PROCEED</p><h2>Good decisions start with <em>good questions.</em></h2><p>Property details matter. We help you know what to ask before you decide.</p></div>
+        <div class="trust-list">
+          <article><span class="trust-number">01</span><div><h3>Local property knowledge</h3><p>Explore opportunities around Osogbo and surrounding areas.</p></div><span aria-hidden="true">↗</span></article>
+          <article><span class="trust-number">02</span><div><h3>Property information</h3><p>Ask for available details, status and documentation information.</p></div><span aria-hidden="true">↗</span></article>
+          <article><span class="trust-number">03</span><div><h3>Inspection support</h3><p>Request a visit and discuss a suitable inspection time.</p></div><span aria-hidden="true">↗</span></article>
+          <article><span class="trust-number">04</span><div><h3>Direct communication</h3><p>Speak with the team about a property and your next steps.</p></div><span aria-hidden="true">↗</span></article>
+          <article><span class="trust-number">05</span><div><h3>Property management</h3><p>Connect with Rehoboth about property management services.</p></div><span aria-hidden="true">↗</span></article>
+        </div>
+      </section>
+
+      <section class="process-section" id="process">
+        <div class="process-inner section-wrap"><div class="process-heading"><p class="eyebrow">FROM DISCOVERY TO DECISION</p><h2>A straightforward<br><em>way forward.</em></h2><p>Take the time you need. Get the information you need.</p></div>
+          <ol class="process-list"><li><span>01</span><h3>Browse property</h3><p>Explore listings and note what fits your needs.</p></li><li><span>02</span><h3>Ask questions</h3><p>Confirm availability, price and property details.</p></li><li><span>03</span><h3>Schedule inspection</h3><p>Request a visit and agree a convenient time.</p></li><li><span>04</span><h3>Review documentation</h3><p>Ask for the available documents and have them independently reviewed.</p></li><li><span>05</span><h3>Proceed with your decision</h3><p>Move forward only when you are comfortable with what you have verified.</p></li></ol>
+        </div>
+      </section>
+
+      <section class="inspection-section section-wrap" id="contact">
+        <div class="inspection-copy"><p class="eyebrow">MAKE YOUR NEXT MOVE</p><h2>Interested in<br>a <em>property?</em></h2><p>Tell us what you are looking for. We will use your details to prepare an inspection enquiry in WhatsApp.</p><div class="inspection-contact"><span class="contact-line"></span><span>Prefer a quick conversation?</span><a class="arrow-link js-whatsapp" href="#contact">Chat with Rehoboth <span aria-hidden="true">↗</span></a></div></div>
+        <form class="inspection-form" id="inspection-form">
+          <div class="form-heading"><h3>Request an inspection</h3><span>01 / ENQUIRY</span></div>
+          <label>Full name<input name="name" type="text" placeholder="Your name" required autocomplete="name"></label>
+          <label>Phone / WhatsApp<input name="phone" type="tel" placeholder="Your phone number" required autocomplete="tel"></label>
+          <label>Property interested in<input name="property" id="inspection-property" type="text" placeholder="Property name or area" required></label>
+          <label>Preferred inspection date<input name="date" type="date"></label>
+          <label>Message<textarea name="message" rows="3" placeholder="Anything else we should know?"></textarea></label>
+          <button class="button button-primary form-submit" type="submit">Request inspection <span aria-hidden="true">↗</span></button>
+          <p class="form-privacy">Your enquiry will be prepared to send directly to Rehoboth via WhatsApp.</p>
+          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+      <section class="closing-note"><p>Rehoboth Homes & Estate Management</p><span>OSOGBO · OSUN STATE</span></section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="./"><span class="brand-mark" aria-hidden="true">R<span>H</span></span><span class="brand-name">Rehoboth Homes<small>& Estate Management</small></span></a>
+    <p>Property sales, rent management<br>and property development in Osogbo.</p>
+    <div class="footer-links"><a href="#properties">Properties</a><a href="#about">About</a><a href="#contact">Request inspection</a><a id="social-link" href="#" hidden target="_blank" rel="noopener noreferrer">X / Twitter ↗</a></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Rehoboth Homes & Estate Management</span><span>Osogbo, Osun State, Nigeria</span><span>Property information should be independently verified.</span></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
